@@ -8,7 +8,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: '/',
+    publicPath: 'https://poc-mfe-auth.pages.dev/',
   },
   plugins: [
     new ModuleFederationPlugin({

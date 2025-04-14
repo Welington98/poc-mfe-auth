@@ -18,6 +18,11 @@ const prodConfig = {
       },
       shared: packageJson.dependencies,
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: '_redirects', to: '.' }, // Isso garante que _redirects vá para dashboard/latest/
+      ],
+    }),
   ],
 };
 
